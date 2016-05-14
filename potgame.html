@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Axel Hjelmqvist - 2048+ -spel</title>
+    <meta name="description" content="Välkommen till Axel Hjelmqvists hemsida. Welcome to the homepage of Axel Hjelmqvist" />
+    <meta name="keywords" content="axel hjelmqvist, spel, portfolio, cv" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+  </head>
+  <body>
+  <script id="vtexshader" type="x-shader/x-vertex">
+    attribute vec3 vertPos;
+    attribute vec2 texCoord;
+    
+    uniform mat4 matrix;
+    uniform mat4 modelViewMat;
+    uniform mat4 perspective;
+
+    varying vec2 texCoordVar;
+
+    void main(void) {
+      gl_Position = vec4(vertPos.x, vertPos.y, vertPos.z, 1) * matrix * perspective;
+      vec2 texCoordInv = texCoord;
+      texCoordVar = texCoordInv;
+    }
+  </script>
+  <script id="ftexshader" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform sampler2D texture0;
+    uniform mat4 textureTransform;
+
+    varying vec2 texCoordVar;
+
+    void main(void) {
+      gl_FragColor = texture2D(texture0, (vec4(texCoordVar.xy, 1.0, 1.0) * textureTransform).xy);
+    }
+  </script>
+    <ul id="select" class="menu">
+      <li class="button"><a href="contact.html" class="center">Kontakt</a></li>
+      <li class="button"><a href="blocksgame.html" class="center">Blocks-spel</a></li>
+      <li class="button"><a href="github.html" class="center">Github</a></li>
+      <li class="button"><a href="index.html" class="center">Presentation</a></li>
+    </ul>
+    <div id="main" class="content">
+      <p style="margin-bottom: 500px;">Ett enkelt spel som jag skrivit i JavaScript, kräver HTML5 och du spelar med piltangenterna.
+      Baserat på Webgl, jag har inte använt några extra bibliotek.</p>
+      <img src="background.png" alt="art" style="position: absolute; top: 100px; background-color: blue; width: 200px;">
+      <canvas class="content" width="200" height="200" style="position: absolute; top: 200px; width: 200px; height: 200px;">
+        <p>Tyvärr stöder inte din webbläsare Canvas-elmentet. Html5 canvas is not supported by your browser.</p>
+      </canvas>
+      <p class="footer">Copyright © 2015 Axel Hjelmqvist</p>
+      <script src="compiled.js"></script>
+    </div>
+  </body>
+</html>
