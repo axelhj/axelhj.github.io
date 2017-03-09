@@ -164,3 +164,24 @@ p.footer {
   background-color: #FEFEFE;
   color: #BCBCBC;
 }
+
+@keyframes flash-reddish {
+  0% {
+    background-color: white;
+  }
+  20% {
+    background-color: #ff6f4f;
+  }
+  90% {
+    background-color: #ffd2ba;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.flash-red {
+  -webkit-animation: flash-reddish 2s linear;
+  animation: flash-reddish 2s linear;
+  width: auto;
+}
