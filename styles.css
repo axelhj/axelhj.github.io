@@ -55,7 +55,7 @@ body {
   background-color: #FEFEFE;
   text-align: left;
   position: relative;
-  margin-top: 125px;
+  margin-top: 120px;
   width: 100%;
 }
 
@@ -67,6 +67,10 @@ body {
 
 .section p, .section h2, .section a {
   margin-left: 40px;
+}
+
+.section p {
+  margin-right: 40px;
 }
 
 .langlink {
@@ -131,6 +135,10 @@ a.intext:link, a.intext:visited, a.intext:hover {
 }
 
 @media only screen and (max-width: 550px) {
+  .content {
+    margin-top: 0px;
+  }
+
   .menu-background {
     height: 105px;
   }
