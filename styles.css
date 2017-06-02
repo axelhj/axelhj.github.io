@@ -8,11 +8,15 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: #96b2cc;
+}
+
+.headerSection {
+  height: 240px;
   background-image: url(havet.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 50% -40px;
-  background-color: #96b2cc;
 }
 
 .header {
@@ -54,7 +58,7 @@ body {
   background-color: #FEFEFE;
   text-align: left;
   position: relative;
-  margin-top: 120px;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -129,7 +133,7 @@ a.intext:link, a.intext:visited, a.intext:hover {
 }
 
 @media only screen and (max-width: 741px) {
-  body {
+  .headerSection {
     background-size: 741px auto;
   }
 }
