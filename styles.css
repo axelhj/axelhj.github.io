@@ -144,12 +144,12 @@ a.intext:link, a.intext:visited, a.intext:hover {
   }
 
   .menu-background {
-    height: 105px;
+    height: 99px;
   }
 
   .menu {
     display: block;
-    top: -105px;
+    top: -99px;
   }
 
   .menu .button {
@@ -157,7 +157,8 @@ a.intext:link, a.intext:visited, a.intext:hover {
     border-radius: 0;
     width: 100%;
     clear: both;
-    margin: 3px 0;
+    margin: 0;
+    margin-bottom: 6px;
     height: 20px;
   }
 
