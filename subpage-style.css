@@ -113,4 +113,9 @@ a:active {
     display: block;
     margin: 20px auto 100px auto;
   }
+
+  .power-of-two-game-canvas-background,
+  .power-of-two-game-canvas {
+    margin-left: 20px;
+    margin-right: 20px;
 }
