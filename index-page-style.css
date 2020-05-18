@@ -1,5 +1,4 @@
 body {
-  position: relative;
   color: #151233;
   font-family: Arial, Helvetica, Verdana, Sans-serif;
   font-size: 14px;
@@ -7,6 +6,39 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+h2 {
+  padding: 20px 0 0 50px;
+  font-size: 1.5em;
+  border-radius: 4px;
+}
+
+p {
+  padding: 0 0 20px 50px;
+}
+
+a:active {
+  color: #FFF;
+}
+
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: #383838;
+  margin-left: initial;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #808080;
+}
+
+.menu-item a:hover,
+.menu-item a:active {
+  text-decoration: underline;
+  color: #F8F8F8;
 }
 
 .page-head-menu {
@@ -28,10 +60,13 @@ body {
 
 .menu-title h1,
 .menu-title p {
-  padding-left: 45px;
-  margin: 20px 0 0 0;
+  padding: 20px 45px 0 45px;
+  margin: 0;
   display: block;
-  width: 100%;
+}
+
+.menu-title p {
+  padding-bottom: 15px;
 }
 
 .menu-list {
@@ -60,24 +95,20 @@ body {
   position: relative;
   margin-top: 0;
   width: 100%;
-  padding: 20px 0 20px 50px;
-  height: auto;
   border-bottom: 1px solid rgba(30, 30, 30, 0.2)
 }
 
-p, h2, a {
-  font-style: normal;
-  size: 1em;
-}
-
-h2 {
-  font-size: 1.5em;
-  border-radius: 4px;
-}
-
-p.page-footer {
+.page-footer {
+  padding: 0;
+  margin: 0;
   font-size: 0.7em;
   color: white;
+  background-color: #FEFEFE;
+  color: #BCBCBC;
+}
+
+.page-footer {
+  padding: 2px 45px;
 }
 
 .center-text {
@@ -88,80 +119,60 @@ p.page-footer {
   padding: 0 17px;
 }
 
-a:active {
-  color: #FFF;
-}
-
-a:link,
-a:visited {
-  text-decoration: underline;
-  color: #383838;
-  margin-left: initial;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
-  color: #808080;
-}
-
-.menu-item a:hover,
-.menu-item a:active {
-  text-decoration: underline;
-  color: #F8F8F8;
-}
-
-@media only screen and (max-width: 741px) {
-  .page-section {
-    padding-left: 70px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .content {
-    margin-top: 0px;
-  }
-
-  .menu-background {
-    height: 99px;
-  }
-
-  .menu {
-    display: block;
-    top: -99px;
-  }
-
-  .menu .button {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 0;
+@media only screen and (max-width: 760px) {
+  .page-head-menu {
     width: 100%;
-    clear: both;
+  }
+
+  .menu-title,
+  .menu-list {
+    float: none;
+    width: 100%;
     margin: 0;
-    margin-bottom: 6px;
-    height: 20px;
+    padding: 0;
   }
 
-  .menu .button a {
-    color: #EFEFFE;
+  .menu-item {
+    display: inline-block;
+    width: 15%;
+    margin: 7px 3.7% 3px;
+    min-width: 0;
   }
 
-  .center-text {
-    height: 22px;
+  .menu-title h1 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .page-section > * {
+    padding: 0 70px;
+  }
+
+  .page-footer {
+    padding: 2px 45px;
   }
 }
 
-@media only screen and (max-width: 310px) {
-  .header {
-    background-position: 12px 27px;
-    background-size: 100% auto;
+@media only screen and (max-width: 540px) {
+  .menu-item {
+    width: 19%;
+    margin: 7px 2.4% 3px;
   }
 }
 
-p.footer {
-  padding: 15px 0 15px 20px;
-  margin: 0;
-  background-color: #FEFEFE;
-  color: #BCBCBC;
+@media only screen and (max-width: 470px) {
+  .menu-item {
+    width: 40%;
+    margin: 7px 3.4% 3px;
+  }
+  
+  .page-section > * {
+    padding: 0 15px;
+  }
+
+  .page-footer {
+    padding: 2px 15px;
+  }
 }
 
 @keyframes flash-reddish {
