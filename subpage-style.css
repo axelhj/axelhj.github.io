@@ -51,14 +51,18 @@ p {
 
 .content {
   clear: left;
-  width: 600px;
-  margin: 45px 0 0  65px;
+  width: 100%;
 }
 
-.canvas {
+.content > * {
+  margin: 45px 45px 0 65px;
+}
+
+.canvas,
+.canvas-background {
   clear: left;
-  margin: 0px 0px 100px 0px;
   display: block;
+  margin: 20px 0 100px 65px;
 }
 
 .power-of-two-game-canvas {
@@ -103,3 +107,10 @@ a:active {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 740px) {
+  .canvas,
+  .canvas-background {
+    display: block;
+    margin: 20px auto 100px auto;
+  }
+}
