@@ -21,9 +21,9 @@
         <li class="menu-item flash-contact-header"><a href="index.html#contact" class="center-text">Contact</a></li>
       </ul>
     </div>
-    <div class="page-section">
+    <div id="github" class="page-section">
       <h2 id="code-header">Code</h2>
-      <p>Follow me on <a href="https://github.com/axelhj/Blocksgame">Github</a>.</p>
+      <p>Follow me on <a href="https://github.com/axelhj/">Github</a>.</p>
     </div>
     <div id="contact" class="page-section">
       <h2 id="contact-header">Contact</h2>
@@ -45,7 +45,7 @@
     <p class="page-footer">Copyright © 2015 Axel Hjelmqvist</p>
     <script>
       function resetClassOnClick(triggerElementClass, targetElementClass, resetClass) {
-        document.getElementsByClassName("flash-code-header")[0]
+        document.getElementsByClassName(triggerElementClass)[0]
         .addEventListener("click", function() {
           targetElement = document.getElementById(targetElementClass);
           targetElement.className = "";
