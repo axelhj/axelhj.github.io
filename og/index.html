@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+  <head>
+    <title>Axel Hjelmqvist</title>
+    <meta name="description" content="Välkommen till Axel Hjelmqvists hemsida. Welcome to the homepage of Axel Hjelmqvist" />
+    <meta name="keywords" content="axel hjelmqvist, homepage, personal, hemsida, cv" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index-page-style.css"></link>
+  </head>
+  <body id="top">
+    <div class="page-head-menu">
+      <div class="menu-title">
+        <h1>Axel Lells Hjelmqvist</h1>
+        <p>Välkommen till min sida. Här finns några spel som jag skapade för några år sedan.</p>
+      </div>
+      <ul" class="menu-list">
+        <li class="menu-item flash-code-header"><a href="index.html#github" class="center-text">Github</a></li>
+        <li class="menu-item"><a href="blocksgame.html" class="center-text">Blocks-spel</a></li>
+        <li class="menu-item"><a href="power-of-two-game.html" class="center-text">2048+-spel</a></li>
+        <li class="menu-item flash-contact-header"><a class="center-text" href="index.html#contact" >Kontakt</a></li>
+      </ul>
+    </div>
+    <div id="github" class="page-section">
+      <h2 id="code-header">Kod</h2>
+      <p>På <a href="https://github.com/axelhj/">Github</a> finns lite av sådant som jag gjort på fritiden.</p>
+    </div>
+    <div id="contact" class="page-section">
+      <h2 id="contact-header">Kontakt</h2>
+      <p>Linked in:
+        <a
+          href="https://www.linkedin.com/in/axel-lells-hjelmqvist-2768a298/"
+        >
+          <img
+            src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png"
+            alt="Visa Axel Hjelmqvists profil på LinkedIn"
+          />
+        </a>
+      </p>
+    </div>
+    <div class="page-section">
+      <h2>Engelska</h2>
+      <p>
+        <a href="en/index.html">In english</a>
+      </p>
+    </div>
+    <p class="page-footer">© 2017 Axel Hjelmqvist</p>
+    <script>
+      function resetClassOnClick(triggerElementClass, targetElementClass, resetClass) {
+        document.getElementsByClassName(triggerElementClass)[0]
+        .addEventListener("click", function() {
+          targetElement = document.getElementById(targetElementClass);
+          targetElement.className = "";
+          setTimeout(function () {
+            targetElement.className = resetClass;
+          }, 0);
+        });
+      }
+      resetClassOnClick("flash-code-header", "code-header", "flash-red");
+      resetClassOnClick("flash-contact-header", "contact-header", "flash-red");
+    </script>
+  </body>
+</html>

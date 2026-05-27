@@ -1,63 +1,251 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<!DOCTYPE html>
+<html lang="sv">
   <head>
-    <title>Axel Hjelmqvist</title>
-    <meta name="description" content="Välkommen till Axel Hjelmqvists hemsida. Welcome to the homepage of Axel Hjelmqvist" />
-    <meta name="keywords" content="axel hjelmqvist, homepage, personal, hemsida, cv" />
+    <title>Axel Lells Hjelmqvist | Software Developer | Consid</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Välkommen till Axel Lells Hjelmqvists hemsida. Welcome to the homepage of Axel Lells Hjelmqvist" />
+    <meta name="keywords" content="axel lells hjelmqvist, homepage, personal, hemsida, cv" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="index-page-style.css"></link>
-  </head>
-  <body id="top">
-    <div class="page-head-menu">
-      <div class="menu-title">
-        <h1>Axel Lells Hjelmqvist</h1>
-        <p>Välkommen till min sida. Här finns några spel som jag skapade för några år sedan.</p>
-      </div>
-      <ul" class="menu-list">
-        <li class="menu-item flash-code-header"><a href="index.html#github" class="center-text">Github</a></li>
-        <li class="menu-item"><a href="blocksgame.html" class="center-text">Blocks-spel</a></li>
-        <li class="menu-item"><a href="power-of-two-game.html" class="center-text">2048+-spel</a></li>
-        <li class="menu-item flash-contact-header"><a class="center-text" href="index.html#contact" >Kontakt</a></li>
-      </ul>
-    </div>
-    <div id="github" class="page-section">
-      <h2 id="code-header">Kod</h2>
-      <p>På <a href="https://github.com/axelhj/">Github</a> finns lite av sådant som jag gjort på fritiden.</p>
-    </div>
-    <div id="contact" class="page-section">
-      <h2 id="contact-header">Kontakt</h2>
-      <p>Linked in:
-        <a
-          href="https://www.linkedin.com/in/axel-lells-hjelmqvist-2768a298/"
-        >
-          <img
-            src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png"
-            alt="Visa Axel Hjelmqvists profil på LinkedIn"
-          />
-        </a>
-      </p>
-    </div>
-    <div class="page-section">
-      <h2>Engelska</h2>
-      <p>
-        <a href="en/index.html">In english</a>
-      </p>
-    </div>
-    <p class="page-footer">© 2017 Axel Hjelmqvist</p>
-    <script>
-      function resetClassOnClick(triggerElementClass, targetElementClass, resetClass) {
-        document.getElementsByClassName(triggerElementClass)[0]
-        .addEventListener("click", function() {
-          targetElement = document.getElementById(targetElementClass);
-          targetElement.className = "";
-          setTimeout(function () {
-            targetElement.className = resetClass;
-          }, 0);
-        });
-      }
-      resetClassOnClick("flash-code-header", "code-header", "flash-red");
-      resetClassOnClick("flash-contact-header", "contact-header", "flash-red");
-    </script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <!-- <img src="logo.png" alt="Axel Lells Hjelmqvist" class="logo"> -->
+            <h1 class="logo-x">ALH</h1>
+
+            <nav class="nav">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#links">Links</a>
+                <a href="/og">OgWeb</a>
+            </nav>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <canvas id="ocean-canvas" class="ocean-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-name">Axel Lells Hjelmqvist</h1>
+            <p class="hero-title">Software Developer | Consid</p>
+            <div class="hero-subtitle">
+                Crafting scalable systems and intuitive interfacew with clean code and thoughtful architecture
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h2>Experience</h2>
+        </div>
+        
+        <div class="timeline">
+            <!-- Position 1 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Oct 2025 — Present</div>
+                <div class="timeline-content">
+                    <h3>Senior Software Consultant (Consid)</h3>
+                    <h4>Göteborgsregionen • Gothenburg</h4>
+                    <p class="timeline-desc">
+                        Worked as a systems developer at GR which is a collaboration of 13 municipalities in a role where I worked on a placement tool (PRIIS) used by municipal case handlers that arrange booking of care and housing services.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">.NET 10.0</span>
+                        <span class="tag">FastEnpdoints</span>
+                        <span class="tag">Entity Framework Core</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React js</span>
+                        <span class="tag">RadixUI Themes</span>
+                        <span class="tag">NUnit</span>
+                        <span class="tag">TUnit</span>
+                        <span class="tag">Microsoft SQL Server</span>
+                        <span class="tag">Playwright</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position 2 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Sep 2021 — Feb 2023</div>
+                <div class="timeline-content">
+                    <h3>Senior Software Consultant (Consid)</h3>
+                    <h4>Region Skåne • Malmö</h4>
+                    <p class="timeline-desc">
+                        Being part of the development team at Region Skåne, where he works on an administration portal to manage and monitor employees' access rights in the healthcare system.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">.NET</span>
+                        <span class="tag">Entity Framework Core</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React js</span>
+                        <span class="tag">Shadcn</span>
+                        <span class="tag">XUnit</span>
+                        <span class="tag">Microsoft SQL Server</span>
+                        <span class="tag">Cypress</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position 3 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Dec 2018 — Aug 2022</div>
+                <div class="timeline-content">
+                    <h3>Software Developer</h3>
+                    <h4>HIQ Skåne AB • Malmö</h4>
+                    <p class="timeline-desc">
+                        During this time I worked on several customer projects in system development, where he contributed to both the development and improvement of various system solutions.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Typescript</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">React js</span>
+                        <span class="tag">Web technologies (JS &amp; CSS)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position 4 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Nov 2017 — Nov 2018</div>
+                <div class="timeline-content">
+                    <h3>Software Developer</h3>
+                    <h4>Prevas AB • Malmö</h4>
+                    <p class="timeline-desc">
+                        Focused primarily on the maintenance and further development of customer systems, which included an OEE tool, as well as on developing new data analysis tools to optimize performance and create insights.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Typescript</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">React js</span>
+                        <span class="tag">Web technologies (JS &amp; CSS)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position 5 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2015 — Oct 2017</div>
+                <div class="timeline-content">
+                    <h3>Software Engineer Consultant</h3>
+                    <h4>IBM Svenska • Malmö</h4>
+                    <p class="timeline-desc">
+                        Active in a consulting branch focused on IBM's then newly established public cloud platform, where he participated in several customer projects and developed solutions with clients using Node.js, Typescript and React.js.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Typescript</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">Web technologies (JS &amp; CSS)</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">React js</span>
+                        <span class="tag">IBM Cloud</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position 6 -->
+            <div class="timeline-item">
+                <div class="timeline-date">APr 2014 — Dec 2014</div>
+                <div class="timeline-content">
+                    <h3>Software Engineer Consultant</h3>
+                    <h4>Netville • Lund</h4>
+                    <p class="timeline-desc">
+                        Developed apps as a consultant in a medium/small consulting company using C#, Java to develop Windows Phone/.NET Compact Framework and Android applications.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">.NET Compact Framework</span>
+                        <span class="tag">Bluetooth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & LANGS -->
+    <section id="skills" class="section bg-alt">
+        <div class="section-header">
+            <h2>Languages</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="language-list">
+                    <div class="language-item"><span class="lang-name">Swedish</span><span class="lang-level">Native</span></div>
+                    <div class="language-item"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+                    <div class="language-item"><span class="lang-name">German</span><span class="lang-level">Intermediate</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header skills">
+            <h2>Skills & technologies</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">.Net</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Docker / Compose</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">ElasticSearch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT & EXPLORE -->
+    <section id="links" class="section">
+        <div class="section-header">
+            <h2>Connect &amp; Explore</h2>
+        </div>
+        <div class="section-content">
+            <div class="cards-grid">
+                <a href="https://github.com/axelhj" target="_blank" class="card"><div class="card-content"><h3>GitHub</h3><p>Code repositories</p></div></a>
+                <a href="https://www.linkedin.com/in/axel-lells-hjelmqvist-2768a298/" target="_blank" class="card"><div class="card-content"><h3>LinkedIn</h3><p>Professional profile</p></div></a>
+                <!-- <a href="#" target="_blank" class="card"><div class="card-content"><h3>Blog</h3><p>Architecture &amp; design thoughts</p></div></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DECORATIVE 2D OCEAN SECTION -->
+    <section class="ocean-2d-section">
+        <div class="ocean-2d-container">
+            <canvas id="ocean-2d-canvas" class="ocean-2d-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="agency">Consid AB</p>
+            <div class="location"><span class="pin">📍</span><span>Malmö, Sweden</span></div>
+            <p class="copyright">&copy; 2026 Axel Lells Hjelmqvist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
